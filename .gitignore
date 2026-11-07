@@ -1,0 +1,59 @@
+# ==========================================
+# Python Bytecode & Cache
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments & Packaging
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# Django Specific Exclusions
+# ==========================================
+# Local development database
+db.sqlite3
+*.db
+
+# User-uploaded media assets
+media/
+# Gathered static files (if configured to collect here)
+static_cdn/
+staticfiles/
+
+# Logs and runtime artifacts
+*.log
+celerybeat-schedule
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.[a-zA-Z]*
+local_settings.py
+
+# ==========================================
+# IDE & Code Editors
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
