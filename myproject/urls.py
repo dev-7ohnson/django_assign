@@ -22,8 +22,10 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('portfolio-details/', views.portfolio, name='portfolio'),
+    path('portfolio-details/', views.portfolio, name='portfolio_details'),
     path('service-details/', views.service, name='service'),
     path('starter-page/', views.starter, name='starter'),
 
 ]
+# urls.py example
+

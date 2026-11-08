@@ -1,5 +1,4 @@
 {% load static %}
-++++
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +29,7 @@
 
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: FlexBiz
@@ -154,10 +153,10 @@
           <div class="col-lg-5">
             <div class="media-stack" data-aos="zoom-in" data-aos-delay="200">
               <figure class="media primary shadow-sm">
-                <img src="assets/img/illustration/illustration-8.webp" class="img-fluid" alt="Hero visual">
+                  <img src="{% static 'images/illustration/illustration-8.webp' %}" class="img-fluid" alt="Hero visual">
               </figure>
               <figure class="media secondary shadow-sm">
-                <img src="assets/img/illustration/illustration-15.webp" class="img-fluid" alt="Supporting visual">
+                  <img src="{% static 'images/illustration/illustration-15.webp' %}" class="img-fluid" alt="Supporting visual">
               </figure>
               <div class="floating-badge d-flex align-items-center shadow-sm" data-aos="fade-down" data-aos-delay="300">
                 <i class="bi bi-award me-2"></i>
@@ -302,7 +301,7 @@
           <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-delay="200">
             <aside class="showcase">
               <figure class="showcase-main">
-                <img src="assets/img/about/about-portrait-7.webp" alt="Our Journey" class="img-fluid">
+                  <img src="{% static 'images/about/about-portrait-7.webp' %}" class="img-fluid" alt="Our Journey">
                 <figcaption class="badge-note" data-aos="zoom-in" data-aos-delay="350">
                   <i class="bi bi-graph-up-arrow"></i>
                   <div>
@@ -388,36 +387,37 @@
         <div class="clients-wrapper">
           <div class="clients-track">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="Client 1" loading="lazy">
+                <img src="{% static 'images/clients/clients-2.webp' %}" class="img-fluid" alt="Client 1" loading="lazy">
             </div>
 
             <div class="client-logo">
-              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="Client 2" loading="lazy">
+                 <img src="{% static 'images/clients/clients-5.webp' %}" class="img-fluid" alt="Client 2" loading="lazy">
             </div>
 
             <div class="client-logo">
-              <img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="Client 3" loading="lazy">
+                 <img src="{% static 'images/clients/clients-8.webp' %}" class="img-fluid" alt="Client 3" loading="lazy">
             </div>
 
-            <div class="client-logo">
-              <img src="assets/img/clients/clients-11.webp" class="img-fluid" alt="Client 4" loading="lazy">
-            </div>
+              <div class="client-logo">
+                  <img src="{% static 'images/clients/clients-11.webp' %}" class="img-fluid" alt="Client 4" loading="lazy">
+              </div>
 
-            <div class="client-logo">
-              <img src="assets/img/clients/clients-14.webp" class="img-fluid" alt="Client 5" loading="lazy">
-            </div>
+              <div class="client-logo">
+                  <img src="{% static 'images/clients/clients-14.webp' %}" class="img-fluid" alt="Client 5" loading="lazy">
+              </div>
 
-            <div class="client-logo">
-              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="Client 6" loading="lazy">
-            </div>
+              <div class="client-logo">
+                  <img src="{% static 'images/clients/clients-3.webp' %}" class="img-fluid" alt="Client 6" loading="lazy">
+              </div>
 
-            <div class="client-logo">
-              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="Client 7" loading="lazy">
-            </div>
+              <div class="client-logo">
+                  <img src="{% static 'images/clients/clients-6.webp' %}" class="img-fluid" alt="Client 7" loading="lazy">
+              </div>
 
-            <div class="client-logo">
-              <img src="assets/img/clients/clients-9.webp" class="img-fluid" alt="Client 8" loading="lazy">
-            </div>
+              <div class="client-logo">
+                  <img src="{% static 'images/clients/clients-9.webp' %}" class="img-fluid" alt="Client 8" loading="lazy">
+              </div>
+
           </div>
         </div>
 
@@ -811,7 +811,8 @@
           <div class="col-lg-5">
             <article class="intro-panel" data-aos="fade-right" data-aos-delay="200">
               <figure class="preview-visual mb-4">
-                <img src="assets/img/features/features-3.webp" alt="App preview" class="img-fluid rounded-4 shadow-sm">
+                <img src="{% static 'images/features/features-3.webp' %}" alt="App preview" class="img-fluid rounded-4 shadow-sm">
+
               </figure>
               <div class="intro-content">
                 <h3 class="intro-title">Designed for Productivity</h3>
@@ -964,13 +965,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <img src="{% static 'images/portfolio/portfolio-portrait-1.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Capturing Moments</h4>
                   <p>Photography</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{% static 'images/portfolio/portfolio-portrait-1.webp' %}" class="glightbox" title="Capturing Moments"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -978,13 +980,16 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <img src="{% static 'images/portfolio/portfolio-2.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Woodcraft Design</h4>
                   <p>Web Design</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                   <a href="{% static 'images/portfolio/portfolio-2.webp' %}" class="glightbox" title="Woodcraft Design"><i class="bi bi-zoom-in"></i></a>
+
+                    <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -992,13 +997,16 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automotive">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+               <img src="{% static 'images/portfolio/portfolio-portrait-2.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Classic Beauty</h4>
                   <p>Automotive</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                   <a href="{% static 'images/portfolio/portfolio-portrait-2.webp' %}" class="glightbox" title="Classic Beauty"><i class="bi bi-zoom-in"></i></a>
+
+                  <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -1006,13 +1014,16 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-nature">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-portrait-4.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <img src="{% static 'images/portfolio/portfolio-portrait-4.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Natural Growth</h4>
                   <p>Nature</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-portrait-4.webp" class="glightbox" title="Natural Growth"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{% static 'images/portfolio/portfolio-portrait-4.webp' %}" class="glightbox"
+                         title="Natural Growth"><i class="bi bi-zoom-in"></i></a>
+                      <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -1020,13 +1031,16 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+               <img src="{% static 'images/portfolio/portfolio-5.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Urban Stories</h4>
                   <p>Photography</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{% static 'images/portfolio/portfolio-5.webp' %}" class="glightbox" title="Urban Stories"><i
+                              class="bi bi-zoom-in"></i></a>
+                      <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -1034,13 +1048,16 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+               <img src="{% static 'images/portfolio/portfolio-6.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+
                 <div class="portfolio-info">
                   <h4>Digital Experience</h4>
                   <p>Web Design</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{% static 'images/portfolio/portfolio-6.webp' %}" class="glightbox"
+                         title="Digital Experience"><i class="bi bi-zoom-in"></i></a>
+                      <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -1155,7 +1172,8 @@
                         Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
                       </p>
                       <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
+                        <img src="{% static 'images/person/person-f-1.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+
                         <div>
                           <h3>Jane Smith</h3>
                           <h4>Book Enthusiast</h4>
@@ -1177,7 +1195,8 @@
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
                       </p>
                       <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
+                        <img src="{% static 'images/person/person-m-2.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+
                         <div>
                           <h3>Michael Johnson</h3>
                           <h4>Sci-Fi Blogger</h4>
@@ -1199,7 +1218,8 @@
                         Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
                       </p>
                       <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
+                       <img src="{% static 'images/person/person-f-3.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+
                         <div>
                           <h3>Emily Davis</h3>
                           <h4>Book Club President</h4>
@@ -1221,7 +1241,8 @@
                         Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.
                       </p>
                       <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
+                       <img src="{% static 'images/person/person-m-4.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+
                         <div>
                           <h3>Robert Wilson</h3>
                           <h4>Literary Reviewer</h4>
@@ -1342,7 +1363,8 @@
               <div class="col-lg-5">
                 <div class="visual-section" data-aos="fade-left" data-aos-delay="300">
                   <div class="image-container">
-                    <img src="assets/img/cta/cta-4.webp" alt="Business Growth" class="main-visual">
+                    <img src="{% static 'images/cta/cta-4.webp' %}" alt="Business Growth" class="main-visual">
+
 
                     <div class="floating-badge badge-1" data-aos="zoom-in" data-aos-delay="600">
                       <div class="badge-icon">
@@ -1396,7 +1418,8 @@
           <div class="col-md-6 col-lg-3">
             <article class="member-card h-100" data-aos="zoom-in" data-aos-delay="150">
               <figure class="member-media">
-                <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="Team member portrait">
+                <img src="{% static 'images/person/person-f-9.webp' %}" class="img-fluid" alt="Team member portrait">
+
                 <ul class="social-list">
                   <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
                   <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
@@ -1414,7 +1437,8 @@
           <div class="col-md-6 col-lg-3">
             <article class="member-card h-100" data-aos="zoom-in" data-aos-delay="200">
               <figure class="member-media">
-                <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="Team member portrait">
+                <img src="{% static 'images/person/person-m-7.webp' %}" class="img-fluid" alt="Team member portrait">
+
                 <ul class="social-list">
                   <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
                   <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
@@ -1432,7 +1456,7 @@
           <div class="col-md-6 col-lg-3">
             <article class="member-card h-100" data-aos="zoom-in" data-aos-delay="250">
               <figure class="member-media">
-                <img src="assets/img/person/person-f-12.webp" class="img-fluid" alt="Team member portrait">
+               <img src="{% static 'images/person/person-f-12.webp' %}" class="img-fluid" alt="Team member portrait">
                 <ul class="social-list">
                   <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
                   <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
@@ -1450,7 +1474,8 @@
           <div class="col-md-6 col-lg-3">
             <article class="member-card h-100" data-aos="zoom-in" data-aos-delay="300">
               <figure class="member-media">
-                <img src="assets/img/person/person-m-11.webp" class="img-fluid" alt="Team member portrait">
+                <img src="{% static 'images/person/person-m-11.webp' %}" class="img-fluid" alt="Team member portrait">
+
                 <ul class="social-list">
                   <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
                   <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
@@ -1946,18 +1971,20 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+<script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
 
 </body>
 
